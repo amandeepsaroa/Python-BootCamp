@@ -18,5 +18,8 @@ To use the files in this repository, you will need Python installed on your comp
 
 Additionally, you may need to install some Python libraries for certain projects, which you can do via pip:
 
-```bash
-pip install numpy pandas matplotlib seaborn
+## Contributing
+This repository is primarily for my personal learning and documentation of progress in the Python Bootcamp course. However, suggestions on improving the code or the projects are always welcome.
+
+## License
+This project is open-sourced under the MIT license.
