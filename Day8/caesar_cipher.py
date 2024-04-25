@@ -89,7 +89,7 @@ def main():
         message = input("Type your message:\n").lower()
         shift_number = int(input("Type the shift number\n"))
         
-        
+         
         cipher_message = ceaser(message , shift_number , choice)
         print(f"Here's the {choice}ed result: {cipher_message}")
         
