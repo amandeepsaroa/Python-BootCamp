@@ -21,7 +21,6 @@ while True:
     print(vs)
     print(f"Against B: { dict_B['name'] }, { dict_B['description'] } , from { dict_B['country'] }.")
 
-    print(f"{dict_A['follower_count']} , {dict_B['follower_count']}")
 
     user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
 
