@@ -56,10 +56,13 @@ def process_coffee(user_choice):
 
 
 def process_coins(user_choice):
-    resources['money'] = (coins['quarters'] * 0.25) + (coins['dimes'] * 0.10) + (coins['nickles'] * 0.05) + (
+
+    money_received = (coins['quarters'] * 0.25) + (coins['dimes'] * 0.10) + (coins['nickles'] * 0.05) + (
                  coins['pennies'] * 0.01)
-    change = resources['money'] - MENU[user_choice]['cost']
-    resources['money'] = MENU[user_choice]['cost']
+    change = money_received - MENU[user_choice]['cost']
+
+    resources['money'] += MENU[user_choice]['cost']
+
     return change
 
 
@@ -118,7 +121,6 @@ def main():
 
                 if have_sufficient_money(user_choice):
                     # if have_sufficient_money(user_choice) and have_sufficient_resources(user_choice):
-
                     process_coffee(user_choice)
                     change = process_coins(user_choice)
 
