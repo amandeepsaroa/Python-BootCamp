@@ -12,7 +12,7 @@ def ceaser(message , shift_number , choice):
 
                 shifted = ord(char) + shift_number
                 if shifted > ord('z'):  # Wrap around if it goes beyond 'z'
-                    shifted -= 25       # to start from 'a' again if shifted is 28 therefore more than z ascii -26 = 2 therefore 'b'
+                    shifted -= 26       # to start from 'a' again if shifted is 28 therefore more than z ascii -26 = 2 therefore 'b'
 
                 coded_char = chr(shifted)
                 end_txt += coded_char
@@ -21,7 +21,7 @@ def ceaser(message , shift_number , choice):
 
                 shifted = ord(char) - shift_number
                 if shifted < ord('a'):  # Wrap around if it goes before 'a'
-                    shifted += 25
+                    shifted += 26
 
 
                 coded_char = chr(shifted)
